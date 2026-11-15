@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "name": "JARVIS Android Asistan",
+  "intent": "J.A.R.V.I.S.'in özelliklerinden esinlenen bir Android telefon/tablet uygulaması yapacağız.",
+  "deliverables": [
+    "docs"
+  ],
+  "decisions": [
+    {
+      "what": "notes: \"Primary deliverable is an Android application source pro… → \"Android-only Kotlin source project, v0.2.0; no electroni…",
+      "why": "Improve the existing Android prototype per the user's request to proceed: fix syntax, retain rotation session without disk secrets, improve command routing and cancellation, add unexecuted unit tests.",
+      "at": "2026-11-15T09:52:41.987Z"
+    }
+  ],
+  "notes": "Android-only Kotlin source project, v0.2.0; no electronics or MCU firmware. Voice/text input, TTS, local time/date/battery, optional HTTPS AI chat. Endpoint/model/voice preference saved locally; key/history/draft retained only in memory across rotation, lost at session/process end. No background listening. Requests cancelled best-effort on stop; sent data cannot be recalled. CommandRouter JUnit tests added but not executed. Android compilation, APK, device and external API tests remain…"
+}
